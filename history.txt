@@ -1,0 +1,22 @@
+    1  gpg --full-gen-key
+    2  gpg --output my_rev_cert.asc --gen-revoke FDAC3A4F12DBDECC1383A9830FD0530902CE6F7C
+    3  gpg --list-keys
+    4  gpg --list-secret-keys
+    5  gpg --output danielDoc --export FDAC3A4F12DBDECC1383A9830FD0530902CE6F7C
+    6  ls
+    7  gpg --armor --output danielDoc.asc --export FDAC3A4F12DBDECC1383A9830FD0530902CE6F7C
+    8  ls
+    9  cat danielDoc.asc
+   10  git clone https://github.com/Pyload901/llaves.git
+   11  ls
+   12  cd llaver
+   13  cd llaves
+   14  ls
+   15  gpg --import marioKey.asc
+   16  gpg --list-key
+   17  gpg --edit-key 33F4569E80743494764E0A0E4DBE7A2392292F92
+   18  clear
+   19  touch history.txt
+   20  ls
+   21  history
+   22  history > history.txt
